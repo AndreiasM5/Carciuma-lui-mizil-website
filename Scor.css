@@ -1,0 +1,82 @@
+.container {
+    margin: 20px;
+  }
+
+  .input-container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .input-container input[type="text"] {
+    flex: 1;
+    padding: 5px;
+  }
+
+  .input-container button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  table {
+    color: green;
+    z-index: 3;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .redText {
+    color: red;
+    background-color: blue;
+
+  }
+
+  .blueText {
+    color: blue;
+    background-color: coral;
+  }
+
+  .blackText {
+    color: black;
+    background-color: aqua;
+  }
+
+
+  /* Snackbar styles */
+  .snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    animation: fadein 0.5s, fadeout 0.5s 4.5s;
+  }
+
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }

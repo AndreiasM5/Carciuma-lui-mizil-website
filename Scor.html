@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carciuma lui Mizil</title>
+<link rel="stylesheet" href="Scor.css" type="text/css">
+<link rel="stylesheet" href="Contact.css" type="text/css">
+<link rel="icon" type="mizil_icon" href="mizil_icon.ico">
+</head>
+<body>
+    <header>
+		<div class="logo-container">
+			<img class="logo" src="mizil.png" alt="Logo">
+		</div>
+			<h1 class="title">Carciuma lui Mizil</h1>
+
+			<div class="dropdown">
+			  <button class="dropbtn">Menu</button>
+			  <nav class="dropdown-content">
+				<a href = "Home.html"> Home</a>
+            	<a href = "About_me.html"> About me</a>
+				<a href = "About_game.html"> About game</a>
+				<a href = "Download.html"> Download</a>
+				<a href = "Contact.html"> Contact</a>
+                <a href = "Scor.html"> Scor</a>
+			  </nav>
+			</div>
+	</header>
+
+<main>
+
+
+    <div class="container">
+        <div class="input-container">
+          <input type="text" id="inputName" placeholder="Enter text">
+          <input type="number" id="inputScor" placeholder="Enter text">
+          <button onclick="submitForm()">Submit</button>
+        </div>
+    </div>
+
+    <table id="scoreTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+      </table>
+	  
+	  <button id="eraseBtn">Erase</button>
+
+
+</main>
+
+<footer>
+	<div class="footer-container">
+		<div class="footer-left">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About_me.html">About me</a></li>
+				<li><a href="About_game.html">About game</a></li>
+				<li><a href="Download.html">Download</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+                <li><a href="Scor.html">Scor</a></li>
+
+			</ul>
+		</div>
+		<div class="footer-right">
+			<p>&copy; 2023 Carciuma lui Mizil. All rights reserved.</p>
+			<p>Developed by Ivascu Andrei</p>
+		</div>
+	</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

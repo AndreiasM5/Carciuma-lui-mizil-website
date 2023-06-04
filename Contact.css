@@ -1,0 +1,242 @@
+
+.dropbtn {
+  background-color: #CB262A;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ff7c7c}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #CB262A;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  grid-template-rows:  1fr 5fr 1fr;
+  grid-template-areas: "header" "main" "foter";
+  background-image: url('carciuma_cu_vin.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -2;
+}
+
+header {
+  height: 200px;
+  position: relative;
+}
+
+
+.title {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  margin-left: 25px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: roll 10s linear infinite;
+}
+
+.logo {
+  width: 100px; /* Adjust this value to match your logo size */
+  height: 100px; /* Adjust this value to match your logo size */
+}
+
+
+@keyframes roll {
+  0% {
+    transform: translateY(-50%) translateX(-450%) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-50%) translateX(0%) rotate(360deg);
+  }
+  50% {
+    transform: translateY(-50%) translateX(600%) rotate(720deg);
+  }
+  75% {
+    transform: translateY(-50%) translateX(0%) rotate(1080deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-450%) rotate(1440deg);
+  }
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+  position: relative; /* add this line */
+}
+
+  h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Add this line to center the content horizontally */
+    margin-bottom: 1em;
+  }
+
+  .icon {
+    margin-right: 1em;
+  }
+
+  .icon img {
+    max-width: 32px;
+  }
+
+  .details p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+  .rectangle {
+    width: 400px;
+    height: 300px;
+    margin: 50px auto 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute; /* change this line */
+    top: 50%; /* add this line */
+    left: 50%; /* add this line */
+    transform: translate(-50%, -50%); /* add this line */
+    border: 2px solid rgba(0, 0, 0, 0.95);
+    border-radius: 10px; /* add this line */
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0;
+    margin-top: 250px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .footer-left ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-left li {
+    margin-right: 20px;
+  }
+  
+  .footer-left a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-left a:hover {
+    color: #aaa;
+  }
+  
+  .footer-right p {
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-left {
+      margin-bottom: 20px;
+    }
+    
+    .footer-left li {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  footer ul li a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px; /* Add border-radius property */
+    background-color: #CB262A;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    background-color: #8b0000;
+}
